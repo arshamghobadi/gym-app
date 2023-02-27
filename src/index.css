@@ -3,9 +3,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-* {
-  height: 100%;
-  width: 100%;
-  font-family: 'DM Sans', sans-serif;
-}
