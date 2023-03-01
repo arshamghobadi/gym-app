@@ -21,13 +21,13 @@ export default function Navbar({
   const navbarBackGruond = isTopOfPage ? '' : 'bg-pink-300';
   const flexBetween = 'flex items-center justify-between';
   return (
-    <nav className={`${navbarBackGruond}`}>
+    <nav className={`${navbarBackGruond} `}>
       <div>
         <div>
-          <div className="flex items-center justify-between p-5 ">
+          <div className="flex items-center justify-between p-5">
             <img alt="logo" src={Logo} />
             <div>
-              <div className="hidden md:inline-flex gap-6 mr-5">
+              <div className="hidden md:inline-flex gap-5 mr-5">
                 <Link
                   page="Home"
                   selectedPage={selectedPage}
