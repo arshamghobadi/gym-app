@@ -43,8 +43,12 @@ export default function Home({ setSelectedPage }: Props) {
             <button className=" font-semibold">LearnMore</button>
           </div>
         </motion.div>
-        <div>
-          <img src={HomePageGraphic} alt="personal trainer"></img>
+        <div className=" w-3/4  items-center mx-auto">
+          <img
+            className="h-[450px]"
+            src={HomePageGraphic}
+            alt="personal trainer"
+          ></img>
         </div>
       </div>
       <div className=" bg-red-100 hidden md:inline-flex md:w-full mt-14 ">
