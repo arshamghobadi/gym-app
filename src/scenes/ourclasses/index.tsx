@@ -4,7 +4,7 @@ import image3 from '../../assets/image3.png';
 import image4 from '../../assets/image4.png';
 import image5 from '../../assets/image5.png';
 import image6 from '../../assets/image6.png';
-
+import { HiArrowLongRight } from 'react-icons/hi2';
 import { ClassType, SelectedPage } from '../../shared/types';
 import { motion } from 'framer-motion';
 import HText from '../../shared/HText';
@@ -52,12 +52,13 @@ const classes: Array<ClassType> = [
 
 function OurClasses({ setSelectedPage }: Props) {
   return (
-    <section id="ourclasses" className="w-full">
+    <section id="OurClasses" className="w-full">
       <motion.div
+        className=""
         onViewportEnter={() => setSelectedPage(SelectedPage.OurClasses)}
       >
         <motion.div
-          className="mx-auto w-5/6"
+          className="mx-auto p-5 max-w-6xl"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -78,6 +79,10 @@ function OurClasses({ setSelectedPage }: Props) {
           </div>
         </motion.div>
         <motion.div>
+          <p className="flex flex-col items-center p-4 font-bold text-gray-500">
+            <HiArrowLongRight />
+            scroll right
+          </p>
           <ul className="flex overflow-x-scroll overflow-y-hidden">
             {classes.map((item, i) => (
               <Class key={`${item.name}-${i}`} data={item} />
