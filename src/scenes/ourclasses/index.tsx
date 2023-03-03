@@ -52,7 +52,7 @@ const classes: Array<ClassType> = [
 
 function OurClasses({ setSelectedPage }: Props) {
   return (
-    <section id="OurClasses" className="w-full">
+    <section id="ourclasses" className="w-full">
       <motion.div
         className=""
         onViewportEnter={() => setSelectedPage(SelectedPage.OurClasses)}

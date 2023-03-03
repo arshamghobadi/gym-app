@@ -105,13 +105,13 @@ export default function Navbar({
                       />
 
                       <Link
-                        page="Our Classes"
+                        page="OurClasses"
                         selectedPage={selectedPage}
                         setSelectedPage={setSelectedPage}
                       />
 
                       <Link
-                        page="Contact Us"
+                        page="ContactUs"
                         selectedPage={selectedPage}
                         setSelectedPage={setSelectedPage}
                       />
