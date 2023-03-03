@@ -1,4 +1,3 @@
-import React from 'react';
 import { SelectedPage } from '../../shared/types';
 import { useForm, SubmitHandler } from 'react-hook-form';
 
