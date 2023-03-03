@@ -1,5 +1,6 @@
 import { SelectedPage } from '../../shared/types';
 import { useForm, SubmitHandler } from 'react-hook-form';
+import { motion } from 'framer-motion';
 
 type Props = { setSelectedPage: (value: SelectedPage) => void };
 type Inputs = {
@@ -13,7 +14,8 @@ function ContactUs({ setSelectedPage }: Props) {
   const onSubmit: SubmitHandler<Inputs> = (formData: Inputs) =>
     console.log(formData);
   return (
-    <div
+    <motion.div
+      onViewportEnter={() => setSelectedPage(SelectedPage.ContactUs)}
       id="contactus"
       className="h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-6xl px-10 justify-evenly mx-auto items-center"
     >
@@ -58,7 +60,7 @@ function ContactUs({ setSelectedPage }: Props) {
           </button>
         </form>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -15,7 +15,10 @@ type Props = {
 function Benefits({ setSelectedPage, benefitsdata }: Props) {
   return (
     <section className=" mx-auto min-h-screen max-w-6xl" id="benefits">
-      <motion.div className="mx-auto p-5">
+      <motion.div
+        onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
+        className="mx-auto p-5"
+      >
         <div className=" space-y-3">
           <HText>MORE THAN JUST GYM</HText>
           <p className="text-sm font-semibold">

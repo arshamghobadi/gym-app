@@ -21,7 +21,9 @@ export default function Navbar({
   const navbarBackGruond = isTopOfPage ? '' : 'bg-pink-300';
   const flexBetween = 'flex items-center justify-between';
   return (
-    <nav className={`${navbarBackGruond} w-full mx-auto items-center fixed`}>
+    <nav
+      className={`${navbarBackGruond} w-full mx-auto items-center fixed z-50`}
+    >
       <div className="flex items-center justify-between p-5 max-w-6xl mx-auto">
         <img alt="logo" src={Logo} />
         <div>
